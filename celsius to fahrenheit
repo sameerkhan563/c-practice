@@ -1,0 +1,19 @@
+#include <stdio.h>
+float average(float celsius);
+
+int main()
+{
+    float celsius;
+    printf("enter the value of celsiu\n");
+    scanf("%f", &celsius);
+
+    printf("the value of fahrnhite is %f\n", average(celsius));
+
+    return 0;
+}
+float average(float celsius)
+{
+    float result;
+    result = (float)(celsius * 9 / 5) + 32;
+    return result;
+}
