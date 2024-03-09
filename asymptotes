@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){
+    int n,rev,rem=0,org;
+    printf("enter your number\n");
+    scanf("%d",&n);
+    org = n;
+    while (n!=0)
+    {
+        
+        rev =(n%10);
+        rem = rem*10+rev;
+        n=n/10;
+    }
+    if(org==rem){
+    printf("your %d number is asymptote", rem);
+    }
+    else
+    {
+      printf("your %d number is not asymptote",rem);
+    }
+    
+    
+    return 0;
+}
